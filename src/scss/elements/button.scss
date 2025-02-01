@@ -1,0 +1,26 @@
+.btn {
+  --btn-padding-block: 1.1rem;
+  --btn-padding-inline: 1.6rem;
+
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: calc(var(--border-radius) * .666667);
+  padding: var(--btn-padding-block) var(--btn-padding-inline);
+  font-weight: 400;
+  cursor: pointer;
+
+  &_small {
+    --btn-padding-block: .8rem;
+  }
+
+  &_color_red {
+    background-color: var(--color-red);
+    color: var(--color-white);
+  }
+
+  &_color_red:hover,
+  &_color_red:focus {
+    background-color: var(--color-red-hover);
+  }
+}

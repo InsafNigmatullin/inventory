@@ -1,47 +1,53 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="app">
+    <div class="app_inner">
+      <div class="app_row">
+        <app-window class="app_window"/>
+        <inventory-grid/>
+      </div>
+      <inventory-footer class="app_footer"/>
     </div>
-  </header>
+  </div>
 
-  <main>
-    <TheWelcome />
-  </main>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup>
+import AppWindow from "@/components/AppWindow.vue";
+import InventoryGrid from "@/components/InventoryGrid.vue";
+import InventoryFooter from "@/components/InventoryFooter.vue";
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+<style lang="scss">
+.app {
+  --gap: 2.4rem;
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: var(--gap);
+  min-height: inherit;
+
+  .app_inner {
+    display: grid;
+    margin-top: 6rem;
+    gap: var(--gap);
+    width: 78.5rem;
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
+  .app_row {
+    display: grid;
+    grid-template-columns: 30% auto;
+    gap: var(--gap);
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  .app_window {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .app_footer {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 </style>

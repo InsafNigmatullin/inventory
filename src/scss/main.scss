@@ -1,0 +1,36 @@
+@import 'vue-skeletor/dist/vue-skeletor.css';
+@import './elements';
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #262626;
+  --color-gray: #4D4D4D;
+  --color-lightgray: #7D7D7D;
+  --color-red: #FA7272;
+  --color-red-hover: #FF8888;
+  --color-skeleton: #3B3B3B;
+
+  --color-bg-dark: #1D1D1D;
+  --color-bg-black-transparent: rgba(38, 38, 38, .5);
+
+  --border-radius: 1.2rem;
+  --default-border: .1rem solid var(--color-gray);
+
+  --transition-duration: 200ms;
+
+  --close-btn-indent: .8rem;
+}
+
+html {
+  font-family: Inter, Arial, sans-serif;
+  font-size: 62.5%;
+  font-weight: 500;
+}
+
+body {
+  margin: 0;
+  font-size: 1.4rem;
+  color: var(--color-lightgray);
+  overflow-x: hidden;
+  background-color: #201d1d;
+}

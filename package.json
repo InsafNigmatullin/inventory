@@ -9,7 +9,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.5.13"
+    "pinia": "^2.3.1",
+    "sass-embedded": "^1.83.4",
+    "vue": "^3.5.13",
+    "vue-skeletor": "^1.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
