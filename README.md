@@ -27,3 +27,6 @@ npm run dev
 ```sh
 npm run build
 ```
+![Preview](screenshots/preview1.png)  
+![Preview](screenshots/preview2.png)  
+![Preview](screenshots/preview3.png)  
